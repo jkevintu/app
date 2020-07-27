@@ -13,8 +13,9 @@ const headerStyle = {
 export default function Header(props) {
   return (
     <header className="header" style={headerStyle}>
+      <HeaderLink href="#about">about</HeaderLink>
       <HeaderLink href="#projects">projects</HeaderLink>
-      <HeaderLink href="#about">about</HeaderLink>      
+      <HeaderLink href="#artworks">artworks</HeaderLink>
     </header>
   )
 }

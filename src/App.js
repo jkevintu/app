@@ -11,15 +11,6 @@ function App() {
     <div className="App">
       <Layout>
         <Hero isHomepage="true"></Hero>
-        <Section sectionId="projects">
-          <h2>Projects</h2>
-          <div className="section-items">
-            <ImageItem name="Gamer Sensei"></ImageItem>
-            <ImageItem name="AAA"></ImageItem>
-            <ImageItem name="BBB"></ImageItem>
-          </div>
-        </Section>
-        <Section><hr/></Section>
         <Section sectionId="about">
           <h2>About</h2>
           <code>
@@ -37,6 +28,24 @@ function App() {
             <a href="https://github.com/jkevintu">>> Github</a><br/>
             <a href="https://stackoverflow.com/users/527376/ktu">>> Stackoverflow</a>
           </p>
+        </Section>
+        <Section><hr/></Section>
+        <Section sectionId="projects">
+          <h2>Projects</h2>
+          <div className="section-items">
+            <ImageItem name="Gamer Sensei"></ImageItem>
+            <ImageItem name="AAA"></ImageItem>
+            <ImageItem name="BBB"></ImageItem>
+          </div>
+        </Section>
+        <Section><hr/></Section>
+        <Section sectionId="artworks">
+          <h2>Artworks</h2>
+          <div className="section-items">
+            <ImageItem name="AAA"></ImageItem>
+            <ImageItem name="BBB"></ImageItem>
+            <ImageItem name="CCC"></ImageItem>
+          </div>
         </Section>
       </Layout>
     </div>
