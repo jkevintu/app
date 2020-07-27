@@ -8,14 +8,22 @@ const heroStyle = {
   alignItems: "center",
   justifyContent: "center",
   color: "white",
+}
 
+const codeStyle = {
+  padding: "0 40px"
 }
 
 export default function Hero(props) {
   return (
     <div>
       <div style={heroStyle}>
-        Hero
+          <code style={codeStyle}>
+            Be not afraid of greatness: 
+            some are born great, 
+            some achieve greatness, 
+            and some have greatness thrust upon them.
+          </code>
       </div>
     </div>
   )

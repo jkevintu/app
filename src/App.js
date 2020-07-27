@@ -21,7 +21,22 @@ function App() {
         </Section>
         <Section><hr/></Section>
         <Section sectionId="about">
-          <h2>About</h2>  
+          <h2>About</h2>
+          <code>
+            <strong>J.Kevin Tu</strong><br/>
+            Frontend Developer / Consultant<br/>
+            -----------------------------------<br/>
+            HTML/CSS<br/>
+            Javascript (Vue, React, Angular)<br/>
+            UI/UX/Branding (Photoshop, Sktech)<br/>
+            SEO, SEM, Google Analytics<br/>
+            508 Compliance<br/>
+          </code>
+          <p>
+            <a href="https://www.linkedin.com/in/jkevintu">>> linkedin</a><br/>
+            <a href="https://github.com/jkevintu">>> Github</a><br/>
+            <a href="https://stackoverflow.com/users/527376/ktu">>> Stackoverflow</a>
+          </p>
         </Section>
       </Layout>
     </div>

@@ -1,7 +1,7 @@
 .image-item {
   display: flex;
-  max-width: calc(50% - 60px);
-  padding: 30px;
+  max-width: calc(50% - 2em);
+  padding: 1em;
   position: relative;
   img {
     width: 100%;
@@ -11,8 +11,8 @@
   }
   .image-item-name-wrapper {
     position: absolute;
-    min-height: calc(100% - 30px);
-    width: calc(100% - 60px);
+    min-height: calc(100% - 1em);
+    width: calc(100% - 1em);
     display: flex;
     flex-direction: column;
     align-items: center;
