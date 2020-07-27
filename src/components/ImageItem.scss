@@ -1,0 +1,22 @@
+.image-item {
+  display: flex;
+  max-width: calc(50% - 60px);
+  padding: 30px;
+  position: relative;
+  img {
+    width: 100%;
+    border-radius: 30px;
+    filter: grayscale(100%) contrast(50%);
+    opacity: 0.3;
+  }
+  .image-item-name-wrapper {
+    position: absolute;
+    min-height: calc(100% - 30px);
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(16px + 2vmin);
+  }
+}
