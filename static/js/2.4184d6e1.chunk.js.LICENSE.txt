@@ -4,6 +4,8 @@ object-assign
 @license MIT
 */
 
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
