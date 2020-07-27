@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Hero></Hero>
+        <Hero isHomepage="true"></Hero>
         <Section sectionId="projects">
           <h2>Projects</h2>
           <div className="section-items">
