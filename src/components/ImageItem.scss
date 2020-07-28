@@ -1,7 +1,18 @@
+$bottomgutter: 0.5em;
+$gutter: 0.75em;
+// $flex-basis: 335px;
+$flex-basis: calc(50% - #{$gutter*2});
+$mobile-flex-basis: calc(100% - #{$gutter*2});
+// @media (min-width: 768px) {
+//   .image-item {
+//     flex: 0 1 100%;
+//   }
+// }
+
 .image-item {
   display: flex;
-  max-width: calc(50% - 2em);
-  padding: 0 1em 2em;
+  flex: 0 1 $flex-basis;  
+  padding: 0 $gutter $bottomgutter;
   position: relative;
   img {
     width: 100%;
@@ -11,8 +22,8 @@
   }
   .image-item-name-wrapper {
     position: absolute;
-    min-height: calc(100% - 1em);
-    width: calc(100% - 1em);
+    min-height: calc(100% - #{$bottomgutter/2});
+    width: calc(100% - #{$gutter});
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,5 +32,9 @@
     .image-item-subname {
       font-size: calc(6px + 2vmin);
     }
+  }
+
+  @media (max-width: 768px) {
+    flex:1 0 300px;
   }
 }
