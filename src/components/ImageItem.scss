@@ -10,15 +10,23 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
 // }
 
 .image-item {
+  cursor: pointer;
   display: flex;
   flex: 0 1 $flex-basis;  
-  padding: 0 $gutter $bottomgutter;
+  margin: 0 $gutter $bottomgutter;
   position: relative;
+  border-radius: 30px;
+  overflow: hidden;
   img {
-    width: 100%;
     border-radius: 30px;
+    width: 100%;
     filter: grayscale(100%) contrast(50%);
     opacity: 0.3;
+    transition: all 300ms ease-out;
+    &.hover {
+      filter: none;
+      transform: scale(1.1);
+    }
   }
   .image-item-name-wrapper {
     position: absolute;

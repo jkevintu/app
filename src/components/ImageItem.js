@@ -9,14 +9,31 @@ const getSubname = (props) => {
   )
 }
 
-export default function ImageItem(props) {
-  return (
-    <div className="image-item">
-      <div className="image-item-name-wrapper">
-          {props.name}
-          {getSubname(props)}
-      </div>
-      <img src={props.imgSrc || DEFAULT_IMG} alt={props.name}></img>
-    </div>
-  )
+const getImgHoverClass = (state) => {
+  if (state.hover) return "hover";
 }
+class ImageItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hover: false };
+    this.props = props;
+  }
+  toggleHover (hoverStatus) {
+    this.setState({ hover: hoverStatus });
+  }
+  render() {
+    return (
+      <div className="image-item"
+           onMouseEnter={() => this.toggleHover(true)}
+           onMouseLeave={() => this.toggleHover(false)}>
+        <div className="image-item-name-wrapper">
+            {this.props.name}
+            {getSubname(this.props)}
+        </div>
+        <img className={getImgHoverClass(this.state)} src={this.props.imgSrc || DEFAULT_IMG} alt={this.props.name}></img>
+      </div>
+    )  
+  }
+}
+
+export default ImageItem;
