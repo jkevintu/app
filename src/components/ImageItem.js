@@ -5,7 +5,7 @@ import DEFAULT_IMG from '../img/default-project-pic.png';
 const getSubname = (props) => {
   if (!props.subName) return;
   return (
-    <div class="image-item-subname">{props.subName}</div>
+    <div className="image-item-subname">{props.subName}</div>
   )
 }
 
