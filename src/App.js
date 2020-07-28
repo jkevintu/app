@@ -24,6 +24,7 @@ function App() {
             508 Compliance<br/>
           </code>
           <p>
+            <a href="mailto:ktu@jkevintu.com">ktu@jkevintu.com</a><br/><br/>
             <a href="https://www.linkedin.com/in/jkevintu">>> linkedin</a><br/>
             <a href="https://github.com/jkevintu">>> Github</a><br/>
             <a href="https://stackoverflow.com/users/527376/ktu">>> Stackoverflow</a>
