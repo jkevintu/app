@@ -33,18 +33,17 @@ function App() {
         <Section sectionId="projects">
           <h2>Projects</h2>
           <div className="section-items">
-            <ImageItem name="Gamer Sensei"></ImageItem>
-            <ImageItem name="AAA"></ImageItem>
-            <ImageItem name="BBB"></ImageItem>
+            <ImageItem name="Gamer Sensei" subName="ecommerce"></ImageItem>
+            <ImageItem name="Liaison"  subName="508 Compliance"></ImageItem>
+            <ImageItem name="Pothole Sonar"></ImageItem>
           </div>
         </Section>
         <Section><hr/></Section>
-        <Section sectionId="artworks">
-          <h2>Artworks</h2>
+        <Section sectionId="designs">
+          <h2>Designs</h2>
           <div className="section-items">
-            <ImageItem name="AAA"></ImageItem>
-            <ImageItem name="BBB"></ImageItem>
-            <ImageItem name="CCC"></ImageItem>
+            <ImageItem name="Poster"></ImageItem>
+            <ImageItem name="Event Banner"></ImageItem>
           </div>
         </Section>
       </Layout>

@@ -1,7 +1,7 @@
 .image-item {
   display: flex;
   max-width: calc(50% - 2em);
-  padding: 0 1em 1em;
+  padding: 0 1em 2em;
   position: relative;
   img {
     width: 100%;
@@ -18,5 +18,8 @@
     align-items: center;
     justify-content: center;
     font-size: calc(16px + 2vmin);
+    .image-item-subname {
+      font-size: calc(6px + 2vmin);
+    }
   }
 }

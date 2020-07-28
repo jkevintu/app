@@ -15,7 +15,7 @@ export default function Header(props) {
     <header className="header" style={headerStyle}>
       <HeaderLink href="#about">about</HeaderLink>
       <HeaderLink href="#projects">projects</HeaderLink>
-      <HeaderLink href="#artworks">artworks</HeaderLink>
+      <HeaderLink href="#designs">designs</HeaderLink>
     </header>
   )
 }
