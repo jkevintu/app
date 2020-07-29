@@ -31,8 +31,10 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
   }
   .image-item-name-wrapper {
     position: absolute;
-    min-height: calc(100% - #{$bottomgutter/2});
-    width: calc(100% - #{$gutter});
+    // min-height: calc(100% - #{$bottomgutter/2});
+    min-height: 100%;
+    // width: calc(100% - #{$gutter});
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
