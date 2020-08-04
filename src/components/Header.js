@@ -10,12 +10,33 @@ const headerStyle = {
   position: "absolute"
 }
 
+const getHeaderLinks = (isHomePage = true) => {
+  if (isHomePage) return homePageLinks();
+  return projectLink();
+}
+
+const homePageLinks = () => {
+  return (
+    <React.Fragment>
+      <HeaderLink href="/#about">about</HeaderLink>
+      <HeaderLink href="/#projects">projects</HeaderLink>
+      <HeaderLink href="/#designs">designs</HeaderLink>
+    </React.Fragment>
+  )
+}
+
+const projectLink = () => {
+  return (
+    <React.Fragment>
+      <HeaderLink href="/">X</HeaderLink>
+    </React.Fragment>
+  )
+}
+
 export default function Header(props) {
   return (
     <header className="header" style={headerStyle}>
-      <HeaderLink href="#about">about</HeaderLink>
-      <HeaderLink href="#projects">projects</HeaderLink>
-      <HeaderLink href="#designs">designs</HeaderLink>
+      {getHeaderLinks(props.homepage)}
     </header>
   )
 }

@@ -20,7 +20,7 @@ export default function Home() {
           SEO, SEM, Google Analytics<br/>
           508 Compliance<br/>
         </code>
-        <p>
+        <p className="about-links">
           <a href="mailto:ktu@jkevintu.com">ktu@jkevintu.com</a><br/><br/>
           <a href="https://www.linkedin.com/in/jkevintu">>> linkedin</a><br/>
           <a href="https://github.com/jkevintu">>> Github</a><br/>
@@ -31,7 +31,7 @@ export default function Home() {
       <Section sectionId="projects">
         <h2>Projects</h2>
         <div className="section-items">
-          <ImageItem name="Gamer Sensei" subName="ecommerce"></ImageItem>
+          <ImageItem name="Gamer Sensei" subName="ecommerce" url="gamer-sensei"></ImageItem>
           <ImageItem name="Liaison"  subName="508 Compliance"></ImageItem>
           <ImageItem name="Pothole Sonar"></ImageItem>
         </div>

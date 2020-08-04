@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header"
 
-export default function Layout(props) {
+export default function ProjectLayout(props) {
   return (
-    <div className="layout">
-      <Header homepage="true" />
+    <div className="project-layout">
+      <Header/>
       {props.children}
     </div>
   )

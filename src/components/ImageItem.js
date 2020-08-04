@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./ImageItem.scss";
 import DEFAULT_IMG from '../img/default-project-pic.png';
 
@@ -26,11 +28,13 @@ class ImageItem extends React.Component {
       <div className="image-item"
            onMouseEnter={() => this.toggleHover(true)}
            onMouseLeave={() => this.toggleHover(false)}>
-        <div className="image-item-name-wrapper">
-            {this.props.name}
-            {getSubname(this.props)}
-        </div>
-        <img className={getImgHoverClass(this.state)} src={this.props.imgSrc || DEFAULT_IMG} alt={this.props.name}></img>
+        <Link to={this.props.url}>
+          <div className="image-item-name-wrapper">
+              {this.props.name}
+              {getSubname(this.props)}
+          </div>
+          <img className={getImgHoverClass(this.state)} src={this.props.imgSrc || DEFAULT_IMG} alt={this.props.name}></img>
+        </Link>        
       </div>
     )  
   }

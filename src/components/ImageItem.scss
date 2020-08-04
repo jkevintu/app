@@ -18,6 +18,11 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
   border-radius: 30px;
   overflow: hidden;
   max-height: 50vh;
+
+  @media (max-width: 768px) {
+    flex: 1 0 300px;
+  }
+
   img {
     border-radius: 30px;
     width: 100%;
@@ -29,6 +34,11 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
       transform: scale(1.1);
     }
   }
+
+  a:visited {
+    color: inherit;
+  }
+
   .image-item-name-wrapper {
     position: absolute;
     // min-height: calc(100% - #{$bottomgutter/2});
@@ -45,7 +55,4 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     }
   }
 
-  @media (max-width: 768px) {
-    flex:1 0 300px;
-  }
 }
