@@ -35,7 +35,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     }
   }
 
-  a:visited {
+  a, a:visited {
     color: inherit;
   }
 

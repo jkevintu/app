@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 
 const getButton = (props) => {
-  console.log(props);
   if (!props.linkText || !props.linkUrl) return null;
   return (
     <div className="section-project-desc-button-wrapper">

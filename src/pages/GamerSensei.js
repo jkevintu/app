@@ -2,16 +2,20 @@ import React from "react";
 import ProjectLayout from "../components/ProjectLayout"
 import Hero from "../components/Hero"
 import Section from "../components/Section"
-
 import SectionProjectDesc from "../components/SectionProjectDesc"
+
+import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
+
+
 // import DEFAULT_IMG from '../img/default-project-pic.png';
 
 
 export default function GamerSensei(props) {
   return (
     <ProjectLayout>
-      {/* <Hero isHomepage={false} heroImgUrl={DEFAULT_IMG}> */}
-      <Hero isHomepage={false}>
+      <ScrollToTopOnMount />
+      {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
+      <Hero isHomePage={false}>
         <h1>Gamer Sensei</h1>
         <sub>ecommerce platform redesign</sub>
       </Hero>
@@ -22,7 +26,7 @@ export default function GamerSensei(props) {
           </p>
         </SectionProjectDesc>
         <SectionProjectDesc>
-          <p>
+          <div className="desc-wrapper">
             <div className="desc-title">Role</div>
             <div className="desc-content">
               Web consultant / Sr.Frontend Engineer<br/>
@@ -37,7 +41,7 @@ export default function GamerSensei(props) {
             <div className="desc-content">
               AngularJS / Ruby on Rails
             </div>
-          </p>
+          </div>
         </SectionProjectDesc>
       </Section>
     </ProjectLayout>

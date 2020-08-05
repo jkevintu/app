@@ -28,7 +28,7 @@ class ImageItem extends React.Component {
       <div className="image-item"
            onMouseEnter={() => this.toggleHover(true)}
            onMouseLeave={() => this.toggleHover(false)}>
-        <Link to={this.props.url}>
+        <Link to={this.props.url || "#"}>
           <div className="image-item-name-wrapper">
               {this.props.name}
               {getSubname(this.props)}

@@ -45,8 +45,8 @@ const homePageBlock = () => {
 export default function Hero(props) {
   return (
     <div>
-      <div style={(props.isHomepage) ? homePageHeroStyle : projectPageHeroStyle(props.heroImgUrl)}>
-        {(props.isHomepage) ? homePageBlock() : props.children}
+      <div style={(props.isHomePage) ? homePageHeroStyle : projectPageHeroStyle(props.heroImgUrl)}>
+        {(props.isHomePage) ? homePageBlock() : props.children}
       </div>
     </div>
   )

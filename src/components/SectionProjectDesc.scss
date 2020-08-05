@@ -26,7 +26,10 @@ $major-desc-gutter: 2.6em;
         padding: 0;
       }  
     }
+  }
 
+  .desc-wrapper {
+    margin: $gutter*2 $gutter*3;
     .desc-title {
       font-weight: 700;
       font-size: 0.8em;

@@ -18,9 +18,9 @@ const getHeaderLinks = (isHomePage = true) => {
 const homePageLinks = () => {
   return (
     <React.Fragment>
-      <HeaderLink href="/#about">about</HeaderLink>
-      <HeaderLink href="/#projects">projects</HeaderLink>
-      <HeaderLink href="/#designs">designs</HeaderLink>
+      <HeaderLink href="/app#about">about</HeaderLink>
+      <HeaderLink href="/app#projects">projects</HeaderLink>
+      <HeaderLink href="/app#designs">designs</HeaderLink>
     </React.Fragment>
   )
 }
@@ -28,7 +28,7 @@ const homePageLinks = () => {
 const projectLink = () => {
   return (
     <React.Fragment>
-      <HeaderLink href="/">X</HeaderLink>
+      <HeaderLink href="/app">X</HeaderLink>
     </React.Fragment>
   )
 }
@@ -36,7 +36,7 @@ const projectLink = () => {
 export default function Header(props) {
   return (
     <header className="header" style={headerStyle}>
-      {getHeaderLinks(props.homepage)}
+      {getHeaderLinks(props.isHomePage)}
     </header>
   )
 }

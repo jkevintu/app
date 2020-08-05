@@ -4,10 +4,13 @@ import Hero from "../components/Hero"
 import Section from "../components/Section"
 import ImageItem from "../components/ImageItem"
 
+import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
+
 export default function Home() {
   return (
     <Layout>
-      <Hero isHomepage="true"></Hero>
+      <ScrollToTopOnMount />
+      <Hero isHomePage={true}></Hero>
       <Section sectionId="about">
         <h2>About</h2>
         <code>
@@ -31,17 +34,17 @@ export default function Home() {
       <Section sectionId="projects">
         <h2>Projects</h2>
         <div className="section-items">
-          <ImageItem name="Gamer Sensei" subName="ecommerce" url="gamer-sensei"></ImageItem>
+          <ImageItem name="Gamer Sensei" subName="ecommerce" url="/app/gamer-sensei"></ImageItem>
           <ImageItem name="Liaison"  subName="508 Compliance"></ImageItem>
-          <ImageItem name="Pothole Sonar"></ImageItem>
+          {/* <ImageItem name="Pothole Sonar"></ImageItem> */}
         </div>
       </Section>
       <Section><hr/></Section>
       <Section sectionId="designs">
         <h2>Designs</h2>
         <div className="section-items">
-          <ImageItem name="Poster"></ImageItem>
-          <ImageItem name="Event Banner"></ImageItem>
+          <ImageItem name="Posters" url="/app/posters"></ImageItem>
+          <ImageItem name="Event Banner" url="/app/event-banner"></ImageItem>
         </div>
       </Section>
     </Layout>

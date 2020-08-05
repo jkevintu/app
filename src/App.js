@@ -8,9 +8,9 @@ import GamerSensei from "./pages/GamerSensei";
 function App() {
   return (
       <Router>
-        <Switch>
-          <Route path="/gamer-sensei" component={GamerSensei} />
-          <Route path="/" component={Home} />
+          <Switch>
+          <Route path="/app/gamer-sensei" component={GamerSensei} />
+          <Route path="/app" component={Home} />
         </Switch>
       </Router>
 
