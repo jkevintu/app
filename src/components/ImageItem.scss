@@ -17,7 +17,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  max-height: 50vh;
+  max-height: 60vh;
 
   @media (max-width: 768px) {
     flex: 1 0 300px;

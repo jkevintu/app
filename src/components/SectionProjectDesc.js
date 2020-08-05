@@ -1,7 +1,7 @@
 import React from "react";
-import "./SectionProjectDesc.scss";
+import clsx from "clsx";
 
-import { Link } from "react-router-dom";
+import "./SectionProjectDesc.scss";
 
 
 const getButton = (props) => {
@@ -19,7 +19,7 @@ const getButton = (props) => {
 
 export default function SectionProjectDesc(props) {
   return (
-    <div className="section-project-desc">
+    <div className={clsx("section-project-desc", props.className)}>
       {props.children}
       {getButton(props)}
     </div>

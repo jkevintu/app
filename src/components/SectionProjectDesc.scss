@@ -16,6 +16,10 @@ $major-desc-gutter: 2.6em;
   @media (max-width: 768px) {
     flex: 1 0 $mobile-flex-basis;
   }
+  &.full {
+    flex: 1 0 $mobile-flex-basis;
+  }
+
   p {
     margin: $gutter*2 $gutter*3;
     &.project-major-desc {

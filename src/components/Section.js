@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section.scss"
+import "./Section.scss";
 
 class Section extends React.Component {
   constructor(props) {

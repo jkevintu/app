@@ -1,0 +1,28 @@
+$gutter: 0.75em;
+$flex-basis-one-third: calc(33% - #{$gutter*2});
+
+.section-profile-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 $flex-basis-one-third;  
+  padding-top: 1.5em;
+
+  .section-profile-title {
+    font-size: 1em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.6;
+  }
+
+  .section-profile-subtitle {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  .section-profile-content {
+    padding-top: 1.2em;
+    opacity: 0.7;
+    line-height: 1.5em;
+  }
+}
