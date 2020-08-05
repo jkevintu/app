@@ -9,8 +9,8 @@ import Liaison from "./pages/Liaison";
 function App() {
   return (
       <Router>
-          <Switch>
-          <Route path="/app/gamer-sensei" component={GamerSensei} />
+        <Switch>
+          <Route path="/app/gamer-sensei-ecommerce" component={GamerSensei} />
           <Route path="/app/508-compliance" component={Liaison} />
           <Route path="/app" component={Home} />
         </Switch>
