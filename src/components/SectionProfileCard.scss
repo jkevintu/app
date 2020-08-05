@@ -5,7 +5,7 @@ $flex-basis-one-third: calc(33% - #{$gutter*2});
   display: flex;
   flex-direction: column;
   flex: 0 1 $flex-basis-one-third;  
-  padding-top: 1.5em;
+  padding: 1.5em 0;
 
   .section-profile-title {
     font-size: 1em;

@@ -1,0 +1,26 @@
+$gutter: 0.75em;
+
+.section-profile-detail {
+  &.title {
+    flex: 0 1 calc(33% - #{$gutter});
+    font-size: 1.4em;
+    line-height: 1.6em;
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+    }
+  }
+  &.content {
+    flex: 0 1 calc(66% - #{$gutter});
+    opacity: 0.6;
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+      margin-top: $gutter;
+    }
+  }
+  p {
+    margin-left: 0;
+    &:first-child {
+      margin-block-start: 0em;
+    }
+  }
+}
