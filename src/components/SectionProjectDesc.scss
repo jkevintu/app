@@ -4,6 +4,7 @@ $flex-basis: calc(50% - #{$gutter*2});
 $mobile-flex-basis: calc(100% - #{$gutter*2});
 
 $major-desc-gutter: 2.6em;
+$marjor-desc-padding: 45px;
 
 .section-project-desc {
   display: flex;
@@ -16,6 +17,14 @@ $major-desc-gutter: 2.6em;
   @media (max-width: 768px) {
     flex: 1 0 $mobile-flex-basis;
   }
+
+  &.small {
+    flex: 1 0 calc(40% - #{$gutter*2});
+  }
+  &.large {
+    flex: 1 0 calc(60% - #{$gutter*2});
+  }
+
   &.full {
     flex: 1 0 $mobile-flex-basis;
   }
@@ -23,34 +32,44 @@ $major-desc-gutter: 2.6em;
   p {
     margin: $gutter*2 $gutter*3;
     &.project-major-desc {
-      font-size: 1.2em;
-      line-height: 1.6em;
-      padding: 0 $major-desc-gutter;
+      font-size: 1.3em;
+      line-height: 1.8em;
+      padding: 0 $marjor-desc-padding;
       @media (max-width: 768px) {
         padding: 0;
+        margin-left: 0;
+        margin-right: 0;
       }  
     }
   }
 
   .desc-wrapper {
-    margin: $gutter*2 $gutter*3;
+    margin: $gutter*2 $marjor-desc-padding;
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }  
     .desc-title {
       font-weight: 700;
-      font-size: 0.8em;
+      font-size: 0.9em;
       line-height: 1.3em;
       text-transform: uppercase;
       color: #CCC;
     }
     .desc-content {
       line-height: 1.3em;
-      font-size: 0.7em;
+      font-size: 0.8em;
     }
   }
 
   .section-project-desc-button-wrapper {
-    padding: 0 $gutter*3;
+    margin: 0 $major-desc-gutter;
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }  
     a {
-      margin: 0 $major-desc-gutter;
+      margin: 0 $marjor-desc-padding;
       @media (max-width: 768px) {
         margin: 0 auto;
       }

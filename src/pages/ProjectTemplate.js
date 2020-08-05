@@ -12,17 +12,17 @@ import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 // import DEFAULT_IMG from '../img/default-project-pic.png';
 
 
-export default function Liaison(props) {
+export default function ProjectTemplate(props) {
   return (
     <ProjectLayout>
       <ScrollToTopOnMount />
       {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
       <Hero isHomePage={false}>
-        <h1>Liaison</h1>
-        <sub>508 Compliance</sub>
+        <h1>Project Template</h1>
+        <sub>template substring</sub>
       </Hero>
       <Section className="flex">
-        <SectionProjectDesc className="large">
+        <SectionProjectDesc className="large" linkText="Download App" linkUrl="https://google.com">
           <p className="project-major-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

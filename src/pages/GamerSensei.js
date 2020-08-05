@@ -20,12 +20,12 @@ export default function GamerSensei(props) {
         <sub>ecommerce platform redesign</sub>
       </Hero>
       <Section className="flex">
-        <SectionProjectDesc linkText="Launch Website" linkUrl="https://gamersensei.com/senseis/searches">
+        <SectionProjectDesc className="large" linkText="Launch Website" linkUrl="https://gamersensei.com/senseis/searches">
           <p className="project-major-desc">
             Next generation eSports coaching: design and reimagine ecommerce experience
           </p>
         </SectionProjectDesc>
-        <SectionProjectDesc>
+        <SectionProjectDesc className="small">
           <div className="desc-wrapper">
             <div className="desc-title">Role</div>
             <div className="desc-content">
