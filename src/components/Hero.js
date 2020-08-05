@@ -1,4 +1,5 @@
 import React from "react";
+import "./Hero.scss"
 
 const homePageHeroStyle = {
   minHeight: "100vh",
@@ -44,7 +45,7 @@ const homePageBlock = () => {
 
 export default function Hero(props) {
   return (
-    <div>
+    <div className="hero">
       <div style={(props.isHomePage) ? homePageHeroStyle : projectPageHeroStyle(props.heroImgUrl)}>
         {(props.isHomePage) ? homePageBlock() : props.children}
       </div>

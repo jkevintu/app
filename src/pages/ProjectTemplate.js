@@ -18,8 +18,8 @@ export default function ProjectTemplate(props) {
       <ScrollToTopOnMount />
       {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
       <Hero isHomePage={false}>
-        <h1>Project Template</h1>
-        <sub>template substring</sub>
+        <h1>Project Title</h1>
+        <sub>Company Name // 2019 - Present</sub>
       </Hero>
       <Section className="flex">
         <SectionProjectDesc className="large" linkText="Download App" linkUrl="https://google.com">
