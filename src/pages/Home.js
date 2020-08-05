@@ -35,7 +35,7 @@ export default function Home() {
         <h2>Projects</h2>
         <div className="section-items">
           <ImageItem name="Gamer Sensei" subName="ecommerce" url="/app/gamer-sensei"></ImageItem>
-          <ImageItem name="Liaison"  subName="508 Compliance"></ImageItem>
+          <ImageItem name="Liaison"  subName="508 Compliance" url="/app/508-compliance"></ImageItem>
           {/* <ImageItem name="Pothole Sonar"></ImageItem> */}
         </div>
       </Section>

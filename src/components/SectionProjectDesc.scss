@@ -45,6 +45,15 @@ $major-desc-gutter: 2.6em;
 
   .section-project-desc-button-wrapper {
     padding: 0 $gutter*3;
+    a {
+      margin: 0 $major-desc-gutter;
+      @media (max-width: 768px) {
+        margin: 0 auto;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
   }
   .section-project-desc-button {
     width: 300px;
@@ -52,12 +61,18 @@ $major-desc-gutter: 2.6em;
     background-color: white;
     color: #777;
     border: 1px solid #777;
+    &:hover {
+      background-color: #f7f7f7;
+    }
+    &:focus {
+      color: #555;
+      outline: 1px solid #555;
+    }
 
-    margin-left: $major-desc-gutter;
+    // margin-left: $major-desc-gutter;
     
     @media (max-width: 768px) {
       width: 100%;
-      margin-left: auto;
     }  
   }
 }
