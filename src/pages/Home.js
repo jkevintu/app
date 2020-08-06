@@ -34,8 +34,8 @@ export default function Home() {
       <Section sectionId="projects">
         <h2>Projects</h2>
         <div className="section-items">
-          <ImageItem name="Gamer Sensei" subName="ecommerce" url="/app/gamer-sensei-ecommerce"></ImageItem>
-          <ImageItem name="Liaison"  subName="508 Compliance" url="/app/508-compliance"></ImageItem>
+          <ImageItem name="Sensei Search 2.0" subName="GamerSensei // Ecommerce platform" url="/app/gamer-sensei-ecommerce"></ImageItem>
+          {/* <ImageItem name="Liaison"  subName="508 Compliance" url="/app/508-compliance"></ImageItem> */}
           {/* <ImageItem name="Pothole Sonar"></ImageItem> */}
         </div>
       </Section>

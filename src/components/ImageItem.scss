@@ -55,7 +55,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     justify-content: center;
     font-size: calc(16px + 2vmin);
     .image-item-subname {
-      font-size: calc(6px + 2vmin);
+      font-size: calc(6px + 1.5vmin);
     }
   }
 

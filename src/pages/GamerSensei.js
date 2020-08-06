@@ -16,8 +16,8 @@ export default function GamerSensei(props) {
       <ScrollToTopOnMount />
       {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
       <Hero isHomePage={false}>
-        <h1>Gamer Sensei</h1>
-        <sub>ecommerce platform redesign</sub>
+        <h1>Sensei Search 2.0</h1>
+        <sub>GamerSensei // 2016 - 2017</sub>
       </Hero>
       <Section className="flex">
         <SectionProjectDesc className="large" linkText="Launch Website" linkUrl="https://gamersensei.com/senseis/searches">
