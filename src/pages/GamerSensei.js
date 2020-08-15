@@ -93,7 +93,7 @@ export default function GamerSensei(props) {
           </SectionProfileDetail>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
-          <SectionProfileImage name="Feature analysis" imgURL={GamerSenseiImg2}/>
+          <SectionProfileImage name="Feature analysis" captionShow={true} imgURL={GamerSenseiImg2}/>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
           <SectionProfileDetail className="title">
