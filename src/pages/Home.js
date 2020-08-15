@@ -8,27 +8,66 @@ import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
 // Merge to project.js
 import GamerSenseiImg from '../img/project-gamersensei.png';
+import QuikforceImg from '../img/project-quikforce.png';
 
 const projects = [
   {
+    id: 0,
+    hidden: false,
     name: "Sensei Search 2.0",
     subName: "GamerSensei",
     url: "/app/gamer-sensei-ecommerce",
     imgSrc: GamerSenseiImg
   },
   {
+    id: 1,
+    hidden: true,
+    name: "Quikforce",
+    subName: "On-Demand moving service",
+    url: "/app/quikforce",
+    imgSrc: QuikforceImg
+  },
+  {
+    id: 2,
     hidden: true,
     name: "508 Compliance",
     subName: "Liaison",
     url: "/app/508-compliance"
   },
   {
+    id: 3,
     hidden: true,
     name: "Pothole Sonar",
     subName: "",
     url: "/app/gamer-sensei-ecommerce"
   },
+];
+
+const designs = [
+  {
+    // hidden: true,
+    id: 1,
+    name: "Brand",
+    subName: "Logos, posters",
+    url: "/app/logos",
+  },
+  {
+    // hidden: true,
+    id: 2,
+    name: "Marketing",
+    subName: "booklets, banners",
+    url: "/app/marketing-content",
+  },
+  {
+    id: 3,
+    hidden: true,
+    name: "UI / UX",
+    subName: "Wireframes",
+    url: "/app/wireframes",
+  },
 ]
+
+
 
 export default function Home() {
   return (
@@ -70,6 +109,7 @@ export default function Home() {
               if (project.hidden) return null;
               return (
                 <ImageItem
+                 key={project.id}
                  name={project.name}
                  subName={project.subName}
                  url={project.url}
@@ -83,8 +123,19 @@ export default function Home() {
       <Section sectionId="designs">
         <h2>Designs</h2>
         <div className="section-items">
-          <ImageItem name="Posters" url="/app/posters"></ImageItem>
-          <ImageItem name="Event Banner" url="/app/event-banner"></ImageItem>
+        {
+            designs.map(design => {
+              if (design.hidden) return null;
+              return (
+                <ImageItem
+                 key={design.id}
+                 name={design.name}
+                 subName={design.subName}
+                 url={design.url}
+                 imgSrc={design.imgSrc}></ImageItem>
+               )
+            })
+          }
         </div>
       </Section>
     </Layout>

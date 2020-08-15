@@ -21,7 +21,6 @@ export default function GamerSensei(props) {
   return (
     <ProjectLayout>
       <ScrollToTopOnMount />
-      {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
       <Hero isHomePage={false} heroImgUrl={GamerSenseiImg}>
         <h1>Sensei Search 2.0</h1>
         <sub>GamerSensei // 2016 - 2017</sub>
@@ -29,7 +28,7 @@ export default function GamerSensei(props) {
       <Section className="flex">
         <SectionProjectDesc className="large" linkText="Launch Website" linkUrl="https://gamersensei.com/senseis/searches">
           <p className="project-major-desc">
-            Our task was to deliver new ecommerce shopping experience to students when shopping for coaches
+            Our goal was to deliver new ecommerce shopping experience to students when shopping for coaches
           </p>
         </SectionProjectDesc>
         <SectionProjectDesc className="small">
@@ -44,7 +43,7 @@ export default function GamerSensei(props) {
               Sep 2016 - Oct 2017
             </div>
             <br/>
-            <div className="desc-title">Languages</div>
+            <div className="desc-title">Technologies</div>
             <div className="desc-content">
               AngularJS / Ruby on Rails
             </div>

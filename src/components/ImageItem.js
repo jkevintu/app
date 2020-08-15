@@ -15,6 +15,18 @@ const getImgHoverClass = (state) => {
   if (state.hover) return "hover";
 }
 
+const defaultBlackBackground = () => {
+  return {
+    background: '#000',
+    objectFit: 'fill',
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    zIndex: 1,
+    opacity: 0.4
+  }
+}
+
 const ImageItem = (props)  => {
   const [hover, setHover] = useState(false);
 
@@ -30,6 +42,9 @@ const ImageItem = (props)  => {
             {props.name}
             {getSubname(props)}
         </div>
+        { !props.imgSrc &&
+          <div style={defaultBlackBackground()}></div>
+        }
         <img className={getImgHoverClass({hover: hover})}
              src={props.imgSrc || DEFAULT_IMG}
              alt={props.name}></img>

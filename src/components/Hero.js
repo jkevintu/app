@@ -9,7 +9,6 @@ const projectPageSize = {
   height: "670px",
   maxHeight: '75vh',
   color: "white",
-  textShadow: '1px 1px #888'
 }
 
 const textDefaultStyle = {
@@ -21,6 +20,7 @@ const textDefaultStyle = {
   alignItems: "center",
   justifyContent: "center",
   color: "white",
+  textShadow: '1px 1px #888'
 }
 
 const getTextStyle = (props) => {
@@ -40,7 +40,7 @@ const getBackground = (props) => {
   let heroImgUrl = "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAOElEQVQIW2MUFBT8//79ewYQALLBNIjP6OLiApe4d+8eg5KSEsPZs2chEiAGSIB4CZgdKDpwWQ4A7Mc2AV5T93AAAAAASUVORK5CYII=) repeat";
   if (props.heroImgUrl) {
     heroImgUrl = `url(${props.heroImgUrl}) center center / cover`
-    style.filter = "contrast(30%)";
+    // style.filter = "contrast(30%)";
   }
   style.background = heroImgUrl;
   return style;

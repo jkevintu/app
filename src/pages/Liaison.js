@@ -39,7 +39,7 @@ export default function Liaison(props) {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
             <br/>
-            <div className="desc-title">Languages</div>
+            <div className="desc-title">Technologies</div>
             <div className="desc-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
@@ -87,10 +87,10 @@ export default function Liaison(props) {
           </SectionProfileDetail>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
-          <SectionProfileImage name="Structure" imgURL="https://via.placeholder.com/1200x550?text=Structure"/>        
+          <SectionProfileImage name="Structure" imgURL="https://via.placeholder.com/1200x550?text=Structure"/>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
-          <SectionProfileImage name="Image: Landing page + customozie & shop" imgURL="https://via.placeholder.com/1200x550?text=Image: Landing page + customozie"/>        
+          <SectionProfileImage name="Image: Landing page + customozie & shop" imgURL="https://via.placeholder.com/1200x550?text=Image: Landing page + customozie"/>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
           <SectionProfileDetail className="title">

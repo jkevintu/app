@@ -20,7 +20,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
   max-height: 60vh;
 
   @media (max-width: 768px) {
-    flex: 1 0 300px;
+    flex: 0 0 300px;
   }
 
   img {
@@ -28,8 +28,6 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     width: 100%;
     height: 100%;
     object-fit: fill;
-    // filter: grayscale(100%) contrast(50%);
-    opacity: 0.4;
     transition: filter 300ms ease-in-out, transform 300ms ease-out;
     &.hover {
       filter: none;
@@ -47,6 +45,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
 
   .image-item-name-wrapper {
     position: absolute;
+    z-index: 2;
     // min-height: calc(100% - #{$bottomgutter/2});
     min-height: 100%;
     // width: calc(100% - #{$gutter});
@@ -56,7 +55,8 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     align-items: center;
     justify-content: center;
     font-size: calc(16px + 2vmin);
-    text-shadow: 1px 1px #ddd;
+    color: white;
+    text-shadow: 1px 1px #000;
     .image-item-subname {
       font-size: calc(6px + 1.5vmin);
     }

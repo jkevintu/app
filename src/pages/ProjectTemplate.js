@@ -9,15 +9,11 @@ import SectionProfileWrapper from "../components/SectionProfileWrapper"
 import SectionProfileDetail from "../components/SectionProfileDetail"
 import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
-// import DEFAULT_IMG from '../img/default-project-pic.png';
-
-
 export default function ProjectTemplate(props) {
   return (
     <ProjectLayout>
       <ScrollToTopOnMount />
-      {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
-      <Hero isHomePage={false}>
+      <Hero isHomePage={false} heroImgUrl={null}>
         <h1>Project Title</h1>
         <sub>Company Name // 2019 - Present</sub>
       </Hero>
@@ -39,7 +35,7 @@ export default function ProjectTemplate(props) {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
             <br/>
-            <div className="desc-title">Languages</div>
+            <div className="desc-title">Technologies</div>
             <div className="desc-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
@@ -87,10 +83,10 @@ export default function ProjectTemplate(props) {
           </SectionProfileDetail>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
-          <SectionProfileImage name="Structure" imgURL="https://via.placeholder.com/1200x550?text=Structure"/>        
+          <SectionProfileImage name="Structure" imgURL="https://via.placeholder.com/1200x550?text=Structure"/>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
-          <SectionProfileImage name="Image: Landing page + customozie & shop" imgURL="https://via.placeholder.com/1200x550?text=Image: Landing page + customozie"/>        
+          <SectionProfileImage name="Image: Landing page + customozie & shop" imgURL="https://via.placeholder.com/1200x550?text=Image: Landing page + customozie"/>
         </SectionProfileWrapper>
         <SectionProfileWrapper>
           <SectionProfileDetail className="title">
