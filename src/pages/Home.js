@@ -10,7 +10,14 @@ export default function Home() {
   return (
     <Layout>
       <ScrollToTopOnMount />
-      <Hero isHomePage={true}></Hero>
+      <Hero isHomePage={true}>
+        <code>
+          Be not afraid of greatness: 
+          some are born great, 
+          some achieve greatness, 
+          and some have greatness thrust upon them.
+        </code>
+      </Hero>
       <Section sectionId="about">
         <h2>About</h2>
         <code>

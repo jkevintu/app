@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const headerLinkStyle = {
   display: "flex",
@@ -7,7 +7,7 @@ const headerLinkStyle = {
   lineHeight: "24px",
   fontSize: "calc(10px + 1vmin)",
   padding: "0 20px"
-}
+};
 
 const hoverHeaderLink = {
   textDecoration: "underline",
@@ -19,28 +19,24 @@ const getHeaderLinkStyle = (props, state) => {
   return linkStyle;
 }
 
-class HeaderLink extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hover: false };
-    this.props = props;
+const HeaderLink = (props) => {
+
+  const [hover, setHover] = useState(false);
+  function toggleHover (hoverStatus) {
+    setHover(hoverStatus);
   }
-  toggleHover (hoverStatus) {
-    this.setState({ hover: hoverStatus });
-  }
-  render() {
-    return  (
-        <a href={this.props.href}
-           style={getHeaderLinkStyle(this.props, this.state)}
-           onMouseEnter={() => this.toggleHover(true)}
-           onMouseLeave={() => this.toggleHover(false)}>
-          <div>
-             {this.props.children}
-          </div>
-        </a>
-    )
   
-  }
+  return  (
+      <a href={props.href}
+          style={getHeaderLinkStyle(props, {hover: hover})}
+          onMouseEnter={() => toggleHover(true)}
+          onMouseLeave={() => toggleHover(false)}>
+        <div>
+            {props.children}
+        </div>
+      </a>
+  )
+  
 }
 
 export default HeaderLink;

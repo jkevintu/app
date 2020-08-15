@@ -8,7 +8,7 @@ const getButton = (props) => {
   if (!props.linkText || !props.linkUrl) return null;
   return (
     <div className="section-project-desc-button-wrapper">
-      <a href={props.linkUrl} target="_blank">
+      <a href={props.linkUrl} rel="noopener noreferer">
         <button className="section-project-desc-button">
           {props.linkText}
         </button>

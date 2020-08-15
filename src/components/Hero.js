@@ -18,7 +18,6 @@ const projectPageHeroStyle = (heroImgCustomUrl) => {
     height: "670px",
     maxHeight: '75vh',
     background: heroImgUrl,
-    // backgroundSize: 'cover',
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -28,26 +27,14 @@ const projectPageHeroStyle = (heroImgCustomUrl) => {
   }
 }
 
-const codeStyle = {
-  padding: "0 40px"
-}
-
-const homePageBlock = () => {
-  return (
-    <code style={codeStyle}>
-      Be not afraid of greatness: 
-      some are born great, 
-      some achieve greatness, 
-      and some have greatness thrust upon them.
-    </code>
-  )
-}
 
 export default function Hero(props) {
   return (
     <div className="hero">
-      <div style={(props.isHomePage) ? homePageHeroStyle : projectPageHeroStyle(props.heroImgUrl)}>
-        {(props.isHomePage) ? homePageBlock() : props.children}
+      <div style={
+         (props.isHomePage) ? homePageHeroStyle : projectPageHeroStyle(props.heroImgUrl)
+        }>
+        {props.children}
       </div>
     </div>
   )
