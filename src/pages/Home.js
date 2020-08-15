@@ -6,15 +6,35 @@ import ImageItem from "../components/ImageItem"
 
 import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
+const projects = [
+  {
+    name: "Sensei Search 2.0",
+    subName: "GamerSensei // Ecommerce platform",
+    url: "/app/gamer-sensei-ecommerce"
+  },
+  {
+    hidden: true,
+    name: "508 Compliance",
+    subName: "Liaison",
+    url: "/app/508-compliance"
+  },
+  {
+    hidden: true,
+    name: "Pothole Sonar",
+    subName: "",
+    url: "/app/gamer-sensei-ecommerce"
+  },
+]
+
 export default function Home() {
   return (
     <Layout>
       <ScrollToTopOnMount />
       <Hero isHomePage={true}>
         <code>
-          Be not afraid of greatness: 
-          some are born great, 
-          some achieve greatness, 
+          Be not afraid of greatness:
+          some are born great,
+          some achieve greatness,
           and some have greatness thrust upon them.
         </code>
       </Hero>
@@ -41,9 +61,17 @@ export default function Home() {
       <Section sectionId="projects">
         <h2>Projects</h2>
         <div className="section-items">
-          <ImageItem name="Sensei Search 2.0" subName="GamerSensei // Ecommerce platform" url="/app/gamer-sensei-ecommerce"></ImageItem>
-          {/* <ImageItem name="Liaison"  subName="508 Compliance" url="/app/508-compliance"></ImageItem> */}
-          {/* <ImageItem name="Pothole Sonar"></ImageItem> */}
+          {
+            projects.map(project => {
+              if (project.hidden) return null;
+              return (
+                <ImageItem
+                 name={project.name}
+                 subName={project.subName}
+                 url={project.url}></ImageItem>
+               )
+            })
+          }
         </div>
       </Section>
       <Section><hr/></Section>
