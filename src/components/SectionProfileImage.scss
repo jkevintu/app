@@ -3,4 +3,8 @@
   img {
     width: 100%;
   }
+  &.shadow img{
+    box-shadow: 1px 1px #ddd;
+  }
+
 }
