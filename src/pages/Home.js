@@ -10,6 +10,7 @@ import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 import GamerSenseiImg from '../img/project-gamersensei.png';
 import QuikforceImg from '../img/project-quikforce.png';
 import MitcccsImg from '../img/design-mitcccs.png';
+import CafePhiloImg from '../img/design-cafephilo.png';
 
 const projects = [
   {
@@ -65,6 +66,7 @@ const design = [
     name: "Café Philo ＠ Boston",
     subName: "Event banners",
     url: "/app/cafe-philo-boston",
+    imgSrc: CafePhiloImg
   },
 ]
 
