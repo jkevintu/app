@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/app/static/css/main.24f8296e.chunk.css",
-    "main.js": "/app/static/js/main.b91fe641.chunk.js",
-    "main.js.map": "/app/static/js/main.b91fe641.chunk.js.map",
+    "main.css": "/app/static/css/main.e6ba7165.chunk.css",
+    "main.js": "/app/static/js/main.a529ad00.chunk.js",
+    "main.js.map": "/app/static/js/main.a529ad00.chunk.js.map",
     "runtime-main.js": "/app/static/js/runtime-main.95af9303.js",
     "runtime-main.js.map": "/app/static/js/runtime-main.95af9303.js.map",
-    "static/js/2.da462124.chunk.js": "/app/static/js/2.da462124.chunk.js",
-    "static/js/2.da462124.chunk.js.map": "/app/static/js/2.da462124.chunk.js.map",
+    "static/js/2.4ab70eef.chunk.js": "/app/static/js/2.4ab70eef.chunk.js",
+    "static/js/2.4ab70eef.chunk.js.map": "/app/static/js/2.4ab70eef.chunk.js.map",
     "index.html": "/app/index.html",
-    "precache-manifest.08a15b8f41569f625d4b808157732b76.js": "/app/precache-manifest.08a15b8f41569f625d4b808157732b76.js",
+    "precache-manifest.c59e6c21ba6eb61d7fe2836022acb526.js": "/app/precache-manifest.c59e6c21ba6eb61d7fe2836022acb526.js",
     "service-worker.js": "/app/service-worker.js",
-    "static/css/main.24f8296e.chunk.css.map": "/app/static/css/main.24f8296e.chunk.css.map",
-    "static/js/2.da462124.chunk.js.LICENSE.txt": "/app/static/js/2.da462124.chunk.js.LICENSE.txt",
+    "static/css/main.e6ba7165.chunk.css.map": "/app/static/css/main.e6ba7165.chunk.css.map",
+    "static/js/2.4ab70eef.chunk.js.LICENSE.txt": "/app/static/js/2.4ab70eef.chunk.js.LICENSE.txt",
     "static/media/Montserrat-Bold.ttf": "/app/static/media/Montserrat-Bold.ade91f47.ttf",
     "static/media/Montserrat-Regular.ttf": "/app/static/media/Montserrat-Regular.ee653992.ttf",
-    "static/media/default-project-pic.png": "/app/static/media/default-project-pic.d5428f73.png"
+    "static/media/default-project-pic.png": "/app/static/media/default-project-pic.d5428f73.png",
+    "static/media/project-gamersensei-0.png": "/app/static/media/project-gamersensei-0.273326e5.png",
+    "static/media/project-gamersensei.png": "/app/static/media/project-gamersensei.4efd4c50.png"
   },
   "entrypoints": [
     "static/js/runtime-main.95af9303.js",
-    "static/js/2.da462124.chunk.js",
-    "static/css/main.24f8296e.chunk.css",
-    "static/js/main.b91fe641.chunk.js"
+    "static/js/2.4ab70eef.chunk.js",
+    "static/css/main.e6ba7165.chunk.css",
+    "static/js/main.a529ad00.chunk.js"
   ]
 }
