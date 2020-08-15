@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   h1 {
-    font-size: 3em;
+    font-size: calc(1em + 3vmin);;
     margin-bottom: 0.2em;
     text-transform: uppercase;
     letter-spacing: 0.08em;

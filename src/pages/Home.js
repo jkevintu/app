@@ -12,7 +12,7 @@ import GamerSenseiImg from '../img/project-gamersensei.png';
 const projects = [
   {
     name: "Sensei Search 2.0",
-    subName: "GamerSensei // Ecommerce platform",
+    subName: "GamerSensei",
     url: "/app/gamer-sensei-ecommerce",
     imgSrc: GamerSenseiImg
   },
