@@ -25,7 +25,7 @@ export default function GamerSensei(props) {
       <Section className="flex">
         <SectionProjectDesc className="large" linkText="Launch Website" linkUrl="https://gamersensei.com/senseis/searches">
           <p className="project-major-desc">
-            Our task was to deliver new ecommerce shopping experience to students when shopping for senseis (coaches)
+            Our task was to deliver new ecommerce shopping experience to students when shopping for coaches
           </p>
         </SectionProjectDesc>
         <SectionProjectDesc className="small">

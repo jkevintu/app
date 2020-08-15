@@ -32,7 +32,6 @@ const getTextStyle = (props) => {
 const getCoverStyle = (props) => {
   let coverStyle = (props.isHomePage) ? homePageSize : projectPageSize;
   let style = Object.assign({}, coverStyle, getBackground(props))
-  console.log(style);
   return style;
 }
 

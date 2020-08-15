@@ -29,7 +29,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     height: 100%;
     object-fit: fill;
     // filter: grayscale(100%) contrast(50%);
-    opacity: 0.3;
+    opacity: 0.4;
     transition: filter 300ms ease-in-out, transform 300ms ease-out;
     &.hover {
       filter: none;
