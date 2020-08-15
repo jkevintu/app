@@ -31,7 +31,7 @@ export default function Home() {
     <Layout>
       <ScrollToTopOnMount />
       <Hero isHomePage={true}>
-        <code>
+        <code style={{padding: '0 40px'}}>
           Be not afraid of greatness:
           some are born great,
           some achieve greatness,
@@ -58,8 +58,8 @@ export default function Home() {
         </p>
       </Section>
       <Section><hr/></Section>
-      <Section sectionId="projects">
-        <h2>Projects</h2>
+      <Section sectionId="work">
+        <h2>Work</h2>
         <div className="section-items">
           {
             projects.map(project => {
