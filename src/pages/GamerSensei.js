@@ -8,6 +8,7 @@ import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
 
 // import DEFAULT_IMG from '../img/default-project-pic.png';
+import GamerSenseiImg from '../img/project-gamersensei.png';
 
 
 export default function GamerSensei(props) {
@@ -15,7 +16,7 @@ export default function GamerSensei(props) {
     <ProjectLayout>
       <ScrollToTopOnMount />
       {/* <Hero isHomePage={false} heroImgUrl={DEFAULT_IMG}> */}
-      <Hero isHomePage={false}>
+      <Hero isHomePage={false} heroImgUrl={GamerSenseiImg}>
         <h1>Sensei Search 2.0</h1>
         <sub>GamerSensei // 2016 - 2017</sub>
       </Hero>

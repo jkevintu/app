@@ -6,11 +6,15 @@ import ImageItem from "../components/ImageItem"
 
 import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
+// Merge to project.js
+import GamerSenseiImg from '../img/project-gamersensei.png';
+
 const projects = [
   {
     name: "Sensei Search 2.0",
     subName: "GamerSensei // Ecommerce platform",
-    url: "/app/gamer-sensei-ecommerce"
+    url: "/app/gamer-sensei-ecommerce",
+    imgSrc: GamerSenseiImg
   },
   {
     hidden: true,
@@ -68,7 +72,8 @@ export default function Home() {
                 <ImageItem
                  name={project.name}
                  subName={project.subName}
-                 url={project.url}></ImageItem>
+                 url={project.url}
+                 imgSrc={project.imgSrc}></ImageItem>
                )
             })
           }

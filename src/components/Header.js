@@ -7,7 +7,8 @@ const headerStyle = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "flex-end",
-  position: "absolute"
+  position: "absolute",
+  zIndex: 10
 }
 
 const getHeaderLinks = (isHomePage = true) => {

@@ -1,9 +1,21 @@
 import React from "react";
 import "./Hero.scss"
 
-const homePageHeroStyle = {
-  minHeight: "100vh",
-  background: "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAOElEQVQIW2MUFBT8//79ewYQALLBNIjP6OLiApe4d+8eg5KSEsPZs2chEiAGSIB4CZgdKDpwWQ4A7Mc2AV5T93AAAAAASUVORK5CYII=) repeat",
+const homePageSize = {
+  minHeight: "100vh"
+}
+
+const projectPageSize = {
+  height: "670px",
+  maxHeight: '75vh',
+  color: "white",
+  textShadow: '1px 1px #888'
+}
+
+const textDefaultStyle = {
+  position: 'absolute',
+  zIndex: 1,
+  width: '100%',
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -11,30 +23,37 @@ const homePageHeroStyle = {
   color: "white",
 }
 
-const projectPageHeroStyle = (heroImgCustomUrl) => {
-  let heroImgUrl = "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAOElEQVQIW2MUFBT8//79ewYQALLBNIjP6OLiApe4d+8eg5KSEsPZs2chEiAGSIB4CZgdKDpwWQ4A7Mc2AV5T93AAAAAASUVORK5CYII=) repeat";
-  if (heroImgCustomUrl) heroImgUrl = `url(${heroImgCustomUrl}) center center / cover`;
-  return {
-    height: "670px",
-    maxHeight: '75vh',
-    background: heroImgUrl,
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "white",
-    textShadow: '1px 1px #888'
-  }
+const getTextStyle = (props) => {
+  let coverStyle = (props.isHomePage) ? homePageSize : projectPageSize;
+  let style = Object.assign({position: 'absolute'}, textDefaultStyle, coverStyle);
+  return style;
 }
 
+const getCoverStyle = (props) => {
+  let coverStyle = (props.isHomePage) ? homePageSize : projectPageSize;
+  let style = Object.assign(coverStyle, getBackground(props))
+  console.log(style);
+  return style;
+}
+
+const getBackground = (props) => {
+  let style = {};
+  let heroImgUrl = "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAOElEQVQIW2MUFBT8//79ewYQALLBNIjP6OLiApe4d+8eg5KSEsPZs2chEiAGSIB4CZgdKDpwWQ4A7Mc2AV5T93AAAAAASUVORK5CYII=) repeat";
+  if (props.heroImgUrl) {
+    heroImgUrl = `url(${props.heroImgUrl}) center center / cover`
+    style.filter = "contrast(30%)";
+  }
+  style.background = heroImgUrl;
+  return style;
+}
 
 export default function Hero(props) {
   return (
     <div className="hero">
-      <div style={
-         (props.isHomePage) ? homePageHeroStyle : projectPageHeroStyle(props.heroImgUrl)
-        }>
+      <div style={getTextStyle(props)}>
         {props.children}
+      </div>
+      <div style={getCoverStyle(props)}>
       </div>
     </div>
   )

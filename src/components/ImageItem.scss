@@ -12,7 +12,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
 .image-item {
   cursor: pointer;
   display: flex;
-  flex: 0 1 $flex-basis;  
+  flex: 0 1 $flex-basis;
   margin: 0 $gutter $bottomgutter;
   position: relative;
   border-radius: 30px;
@@ -26,7 +26,9 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
   img {
     border-radius: 30px;
     width: 100%;
-    filter: grayscale(100%) contrast(50%);
+    height: 100%;
+    object-fit: fill;
+    // filter: grayscale(100%) contrast(50%);
     opacity: 0.3;
     transition: filter 300ms ease-in-out, transform 300ms ease-out;
     &.hover {
@@ -54,6 +56,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
     align-items: center;
     justify-content: center;
     font-size: calc(16px + 2vmin);
+    text-shadow: 1px 1px #ddd;
     .image-item-subname {
       font-size: calc(6px + 1.5vmin);
     }
