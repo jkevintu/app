@@ -2,6 +2,7 @@ import React, {useState, useCallback} from "react";
 import ProjectLayout from "../components/ProjectLayout"
 import Hero from "../components/Hero"
 import Section from "../components/Section"
+import SectionProjectDesc from "../components/SectionProjectDesc"
 import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
 import Gallery from "react-photo-gallery";
@@ -30,23 +31,46 @@ export default function Mitcccs(props) {
         <h1>MIT CCCS</h1>
         <sub>Concert posters design // 2011 - 2019</sub>
       </Hero>
-      <Section>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
+      <Section className="flex">
+        <SectionProjectDesc className="large" linkText="Website" linkUrl="https://mitcccs.org/">
+          <p className="project-major-desc">
+            MIT Cambridge Chinese Choral Society is a well-respected Boston local community amateur choir
+          </p>
+        </SectionProjectDesc>
+        <SectionProjectDesc className="small">
+          <div className="desc-wrapper">
+            <div className="desc-title">Role</div>
+            <div className="desc-content">
+              President (2017-2019)<br/>
+              Webmaster / Marketing (2011-2019)<br/>
+            </div>
+            <br/>
+            <div className="desc-title">Technologies</div>
+            <div className="desc-content">
+              Photoshop / InDesign / Canva
+            </div>
+          </div>
+        </SectionProjectDesc>
       </Section>
+      <div className="section-wrapper dark">
+      <Section>
+        <Gallery photos={photos} onClick={openLightbox} />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={photos.map(x => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+      </Section>
+      </div>
 
 
     </ProjectLayout>

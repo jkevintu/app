@@ -44,7 +44,7 @@ const projects = [
   },
 ];
 
-const designs = [
+const design = [
   {
     // hidden: true,
     id: 1,
@@ -121,11 +121,11 @@ export default function Home() {
         </div>
       </Section>
       <Section><hr/></Section>
-      <Section sectionId="designs">
-        <h2>Designs</h2>
+      <Section sectionId="design">
+        <h2>Design</h2>
         <div className="section-items">
         {
-            designs.map(design => {
+            design.map(design => {
               if (design.hidden) return null;
               return (
                 <ImageItem

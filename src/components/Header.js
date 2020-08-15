@@ -21,7 +21,7 @@ const homePageLinks = () => {
     <React.Fragment>
       <HeaderLink href="/app/#about">about</HeaderLink>
       <HeaderLink href="/app/#work">work</HeaderLink>
-      <HeaderLink href="/app/#designs">designs</HeaderLink>
+      <HeaderLink href="/app/#design">design</HeaderLink>
     </React.Fragment>
   )
 }
