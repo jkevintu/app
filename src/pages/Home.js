@@ -9,6 +9,7 @@ import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 // Merge to project.js
 import GamerSenseiImg from '../img/project-gamersensei.png';
 import QuikforceImg from '../img/project-quikforce.png';
+import MitcccsImg from '../img/design-mitcccs.png';
 
 const projects = [
   {
@@ -48,15 +49,16 @@ const designs = [
     // hidden: true,
     id: 1,
     name: "Brand",
-    subName: "Logos and marketing content",
+    subName: "Logos / marketing content",
     url: "/app/brand",
   },
   {
     // hidden: true,
     id: 2,
     name: "MIT CCCS",
-    subName: "Chior posters",
+    subName: "Choir posters",
     url: "/app/mit-cccs",
+    imgSrc: MitcccsImg
   },
   {
     id: 3,
