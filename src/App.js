@@ -5,6 +5,7 @@ import ProjectTemplate from "./pages/ProjectTemplate"
 import GamerSensei from "./pages/GamerSensei"
 import Quikforce from "./pages/Quikforce"
 import Liaison from "./pages/Liaison"
+import Websites from "./pages/Websites"
 import Brand from "./pages/Brand"
 import Mitcccs from "./pages/Mitcccs"
 import CafePhiloBoston from "./pages/CafePhiloBoston"
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route path="/app/gamer-sensei-ecommerce" component={GamerSensei} />
           <Route path="/app/quikforce" component={Quikforce} />
+          <Route path="/app/Websites" component={Websites} />
           <Route path="/app/Brand" component={Brand} />
           <Route path="/app/mit-cccs" component={Mitcccs} />
           <Route path="/app/cafe-philo-boston" component={CafePhiloBoston} />

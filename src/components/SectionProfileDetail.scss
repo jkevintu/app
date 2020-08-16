@@ -8,6 +8,19 @@ $gutter: 0.75em;
     @media (max-width: 768px) {
       flex-basis: 100%;
     }
+    .timeframe {
+      opacity: 0.5;
+      font-size: 0.6em;
+      line-height: 1em;
+      font-weight: bold;
+    }
+    .website {
+      a {
+        font-size: 0.7em;;
+        color: blue;
+        text-decoration: none;
+      }
+    }
   }
   &.content {
     flex: 0 1 calc(66% - #{$gutter});

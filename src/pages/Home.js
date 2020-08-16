@@ -38,7 +38,7 @@ const projects = [
   },
   {
     id: 3,
-    hidden: true,
+    // hidden: true,
     name: "Websites",
     url: "/app/websites",
     imgSrc: WebsitesImg
