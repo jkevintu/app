@@ -6,7 +6,7 @@ import apitchdayLogo from "../img/brand/apitchday-logo.png"
 import mjne1 from "../img/brand/ai-in-healthcare.png"
 import mjne2 from "../img/brand/mjne-cover.png"
 import drbeard from "../img/brand/drbeard-logo.png"
-
+import janeMockup from "../img/brand/jane-mockup.gif"
 
 
 export const photos = [
@@ -34,6 +34,11 @@ export const photos = [
     src: mjne2,
     width: 165,
     height: 255,
+  },
+  {
+    src: janeMockup,
+    width: 1440,
+    height: 900
   },
   {
     src: cccsLogo,
