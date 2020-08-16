@@ -15,7 +15,6 @@ import CafePhiloImg from '../img/design-cafephilo.png';
 const projects = [
   {
     id: 0,
-    hidden: false,
     name: "Sensei Search 2.0",
     subName: "GamerSensei",
     url: "/app/gamer-sensei-ecommerce",
@@ -23,7 +22,6 @@ const projects = [
   },
   {
     id: 1,
-    // hidden: true,
     name: "Quikforce",
     subName: "On-Demand moving service",
     url: "/app/quikforce",
@@ -47,10 +45,9 @@ const projects = [
 
 const design = [
   {
-    // hidden: true,
     id: 1,
     name: "Brand",
-    subName: "Logos / marketing content",
+    subName: "Logo / marketing content",
     url: "/app/brand",
   },
   {
