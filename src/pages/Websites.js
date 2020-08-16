@@ -91,8 +91,8 @@ export default function Websites(props) {
                   }
                 </SectionProfileDetail>
                 <SectionProfileDetail className="content">
-                  {website.content && website.content.map(p => {
-                    return <p>{p}</p>
+                  {website.content && website.content.map((p, i) => {
+                    return <p key={i}>{p}</p>
                   })}
                 </SectionProfileDetail>
               </SectionProfileWrapper>

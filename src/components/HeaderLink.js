@@ -6,7 +6,8 @@ const headerLinkStyle = {
   textDecoration: "none",
   lineHeight: "24px",
   fontSize: "calc(10px + 1vmin)",
-  padding: "0 20px"
+  padding: "0 20px",
+  alignItems: 'center'
 };
 
 const hoverHeaderLink = {
@@ -25,7 +26,7 @@ const HeaderLink = (props) => {
   function toggleHover (hoverStatus) {
     setHover(hoverStatus);
   }
-  
+
   return  (
       <a href={props.href}
           style={getHeaderLinkStyle(props, {hover: hover})}
@@ -36,7 +37,7 @@ const HeaderLink = (props) => {
         </div>
       </a>
   )
-  
+
 }
 
 export default HeaderLink;

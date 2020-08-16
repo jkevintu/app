@@ -5,7 +5,7 @@ import Footer from "./Footer"
 export default function ProjectLayout(props) {
   return (
     <div className="project-layout">
-      <Header isHomePage={false} />
+      <Header isHomePage={false} hasLogo={true}/>
       {props.children}
       <Footer></Footer>
     </div>
