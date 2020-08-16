@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a5a22f63314281004e8a3d2d5db7090c",
+    "revision": "88dca78c5adf5a7215676dae2a8e7741",
     "url": "/app/index.html"
   },
   {
-    "revision": "9a02d6c3390bd9988299",
-    "url": "/app/static/css/main.291b317b.chunk.css"
+    "revision": "6ff308b4f79008c6ad6b",
+    "url": "/app/static/css/main.59bc2ee9.chunk.css"
   },
   {
-    "revision": "7504aa04108a68b64868",
-    "url": "/app/static/js/2.8edf0bbe.chunk.js"
+    "revision": "f564aa1787637e060d8f",
+    "url": "/app/static/js/2.f58ce7df.chunk.js"
   },
   {
     "revision": "00f7133314b6afbc32e499d5f1062b75",
-    "url": "/app/static/js/2.8edf0bbe.chunk.js.LICENSE.txt"
+    "url": "/app/static/js/2.f58ce7df.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9a02d6c3390bd9988299",
-    "url": "/app/static/js/main.fdf35037.chunk.js"
+    "revision": "6ff308b4f79008c6ad6b",
+    "url": "/app/static/js/main.aacd5011.chunk.js"
   },
   {
     "revision": "d278979d7c2cfbdf9d3f",
@@ -192,6 +192,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/app/static/media/default-project-pic.d5428f73.png"
   },
   {
+    "revision": "19e2213819f0eb99ff9f3ecc534c76bf",
+    "url": "/app/static/media/design-brand.19e22138.png"
+  },
+  {
     "revision": "dc4e93af2a76edbc558de4db4570d546",
     "url": "/app/static/media/design-cafephilo.dc4e93af.png"
   },
@@ -202,6 +206,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9646a613785b1dec86e97f975f2c78ae",
     "url": "/app/static/media/drbeard-logo.9646a613.png"
+  },
+  {
+    "revision": "a56f5506b5b2a49a84201331a7d692de",
+    "url": "/app/static/media/jane-mockup.a56f5506.gif"
   },
   {
     "revision": "6e3a9a208a6ad63f166d624b86c3b9b7",
@@ -228,8 +236,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/app/static/media/project-quikforce-3.a6d7cda7.jpg"
   },
   {
-    "revision": "d531bed7f73b6a9cf875e258633ab5ed",
-    "url": "/app/static/media/project-quikforce-4.d531bed7.png"
+    "revision": "bc552530944645d2f66ec325211bbfa3",
+    "url": "/app/static/media/project-quikforce-4.bc552530.png"
   },
   {
     "revision": "6c12b1e2a269a65437e56601bd120ea8",
@@ -246,5 +254,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1f6b27104292521d26d00b2af9e34ad2",
     "url": "/app/static/media/project-quikforce.1f6b2710.png"
+  },
+  {
+    "revision": "d5aea222311dcb0730101376bb18e62f",
+    "url": "/app/static/media/project-websites.d5aea222.png"
+  },
+  {
+    "revision": "e8b17657803875493cc679d19f321324",
+    "url": "/app/static/media/website-apitchday.e8b17657.png"
+  },
+  {
+    "revision": "f00fbd0f9c69b96aa4b63df323b39e5b",
+    "url": "/app/static/media/website-moebos.f00fbd0f.png"
   }
 ]);
