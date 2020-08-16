@@ -2,12 +2,11 @@ import React, {useState, useCallback} from "react";
 import ProjectLayout from "../components/ProjectLayout"
 import Hero from "../components/Hero"
 import Section from "../components/Section"
-import SectionProjectDesc from "../components/SectionProjectDesc"
 import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import CafePhiloImg from '../img/design-cafephilo.png';
+import BrandImg from '../img/design-brand.png';
 import { photos } from "./Brand.photo.js";
 
 export default function Brand(props) {
@@ -27,7 +26,7 @@ export default function Brand(props) {
   return (
     <ProjectLayout>
       <ScrollToTopOnMount />
-      <Hero isHomePage={false} heroImgUrl={null}>
+      <Hero isHomePage={false} heroImgUrl={BrandImg}>
         <h1>Brand</h1>
         <sub>Logo / marketing content</sub>
       </Hero>

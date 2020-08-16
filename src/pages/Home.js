@@ -9,6 +9,8 @@ import ScrollToTopOnMount from "../utils/ScrollToTopOnMount"
 // Merge to project.js
 import GamerSenseiImg from '../img/project-gamersensei.png';
 import QuikforceImg from '../img/project-quikforce.png';
+import WebsitesImg from '../img/project-websites.png';
+import BrandImg from '../img/design-brand.png';
 import MitcccsImg from '../img/design-mitcccs.png';
 import CafePhiloImg from '../img/design-cafephilo.png';
 
@@ -37,9 +39,9 @@ const projects = [
   {
     id: 3,
     hidden: true,
-    name: "Pothole Sonar",
-    subName: "",
-    url: "/app/gamer-sensei-ecommerce"
+    name: "Websites",
+    url: "/app/websites",
+    imgSrc: WebsitesImg
   },
 ];
 
@@ -49,6 +51,7 @@ const design = [
     name: "Brand",
     subName: "Logo / marketing content",
     url: "/app/brand",
+    imgSrc: BrandImg
   },
   {
     // hidden: true,
