@@ -100,7 +100,7 @@ export default function GamerSensei(props) {
           </SectionProfileDetail>
           <SectionProfileDetail className="content">
             <p>However we have to keep in mind that identify what are the low haning fruits might be simple, but that doesn't mean we have to implemet all of them.</p>
-            <p>When doing prototyping it's easy to fall in the pitfall when business think this is <i>"Easy to to"</i>. Not only the development time has cost, it also can impact if the product make sense in the middle of development.</p>
+            <p>When doing prototyping it's easy to fall in the pitfall when business think this is <i>"Easy to do"</i>. Not only the development time has cost, it also can impact if the product make sense in the middle of development.</p>
           </SectionProfileDetail>
         </SectionProfileWrapper>
       </Section>
