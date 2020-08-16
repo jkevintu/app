@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33acbbefd5c497d1ff72d9db56f334c6",
+    "revision": "09d2f77a1b61f0ae60a0745d2a146b9a",
     "url": "/app/index.html"
   },
   {
-    "revision": "2a787a45958edf056156",
+    "revision": "1f6b842e6db5943ff682",
     "url": "/app/static/css/main.7b5549a8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/app/static/js/2.72ee9060.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2a787a45958edf056156",
-    "url": "/app/static/js/main.d1b2490f.chunk.js"
+    "revision": "1f6b842e6db5943ff682",
+    "url": "/app/static/js/main.a00c5121.chunk.js"
   },
   {
     "revision": "d278979d7c2cfbdf9d3f",
@@ -228,8 +228,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/app/static/media/project-gamersensei-1.fc759191.png"
   },
   {
-    "revision": "8b334ed6ae011201ef8dbc6abd134512",
-    "url": "/app/static/media/project-gamersensei-2.8b334ed6.png"
+    "revision": "39f23de9cade2de7a1bb981f486478bd",
+    "url": "/app/static/media/project-gamersensei-2.39f23de9.png"
   },
   {
     "revision": "af37db80f90d2dc87d0996e0027e004c",
