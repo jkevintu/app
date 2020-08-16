@@ -44,7 +44,7 @@ const getLogos = (props) => {
             paddingLeft: '24px',
             width: '42px'
           }}>
-            <img alt="Home" style={{height: '100%'}} src={logoImg}></img>
+            <img alt="Home" style={{height: '100%', width: '100%'}} src={logoImg}></img>
           </div>
         </Link>
       }
