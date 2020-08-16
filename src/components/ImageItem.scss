@@ -20,7 +20,7 @@ $mobile-flex-basis: calc(100% - #{$gutter*2});
   max-height: 60vh;
 
   @media (max-width: 768px) {
-    flex: 0 0 300px;
+    flex: 0 1 768px;
   }
 
   img {
