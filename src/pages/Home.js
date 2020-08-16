@@ -54,7 +54,7 @@ const design = [
     // hidden: true,
     id: 2,
     name: "MIT CCCS",
-    subName: "Choir posters",
+    subName: "Concert posters",
     url: "/app/mit-cccs",
     imgSrc: MitcccsImg
   },
@@ -88,8 +88,8 @@ export default function Home() {
           Frontend Developer / Consultant<br/>
           -----------------------------------<br/>
           HTML/CSS<br/>
-          Javascript (Vue, React, Angular)<br/>
-          UI/UX/Branding (Photoshop, Sktech)<br/>
+          Javascript (Vue, React, AngularJS)<br/>
+          UI/UX/Brand (Sktech / Photoshop / InDesign)<br/>
           SEO, SEM, Google Analytics<br/>
           508 Compliance<br/>
         </code>

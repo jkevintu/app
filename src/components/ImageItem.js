@@ -39,7 +39,9 @@ const ImageItem = (props)  => {
           onMouseLeave={() => toggleHover(false)}>
       <Link to={props.url || "#"}>
         <div className="image-item-name-wrapper">
-            {props.name}
+            <div style={{ textTransform: '', fontWeight: 'bold'}}>
+              {props.name}
+            </div>
             {getSubname(props)}
         </div>
         { !props.imgSrc &&

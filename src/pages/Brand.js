@@ -28,8 +28,8 @@ export default function Brand(props) {
     <ProjectLayout>
       <ScrollToTopOnMount />
       <Hero isHomePage={false} heroImgUrl={null}>
-        <h1>Branding</h1>
-        <sub>Logos and marketing content</sub>
+        <h1>Brand</h1>
+        <sub>Logo / marketing content</sub>
       </Hero>
       <div className="section-wrapper dark">
       <Section>
