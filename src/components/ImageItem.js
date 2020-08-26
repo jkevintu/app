@@ -49,7 +49,8 @@ const ImageItem = (props)  => {
         }
         <img className={getImgHoverClass({hover: hover})}
              src={props.imgSrc || DEFAULT_IMG}
-             alt={props.name}></img>
+             alt={props.name}
+             loading="lazy"></img>
       </Link>
     </div>
   )
