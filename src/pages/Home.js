@@ -123,7 +123,7 @@ export default function Home() {
             if (project.hidden) return null;
             return (
               <ImageItem
-                key={project.id}
+                key={`project-${project.id}`}
                 name={project.name}
                 subName={project.subName}
                 url={project.url}
@@ -143,7 +143,7 @@ export default function Home() {
             if (design.hidden) return null;
             return (
               <ImageItem
-                key={design.id}
+                key={`design-${design.id}`}
                 name={design.name}
                 subName={design.subName}
                 url={design.url}
