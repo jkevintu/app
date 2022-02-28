@@ -20,7 +20,8 @@
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "ssri": "6.0.2"
+    "ssri": "6.0.2",
+    "url-parse": "1.5.10"
   },
   "scripts": {
     "predeploy": "npm run build",
